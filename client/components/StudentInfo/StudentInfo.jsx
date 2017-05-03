@@ -1,11 +1,33 @@
 
 import React from 'react';
-import {render} from 'react-dom';
-import DemographicVolunteer from '../DemographicVolunteerInfo/DemographicVolunteerInfo.jsx';
-// import HealthTransportation from './HealthTransportationInfo/index.jsx';
 
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
-// import test from '../../assets/test.png'
+import TextField from 'material-ui/TextField';
+import RaisedButton from 'material-ui/RaisedButton';
+import {orange500} from 'material-ui/styles/colors';
+import injectTapEventPlugin from 'react-tap-event-plugin';
+injectTapEventPlugin();
+
+const styles = {
+	errorStyle: {
+    color: orange500,
+  },
+  underlineStyle: {
+    borderColor: orange500,
+  },
+  floatingLabelStyle: {
+    color: orange500,
+  },
+  floatingLabelFocusStyle: {
+    color: orange500,
+  },
+  button: {
+  	backgroundColor: '#fafafa',
+  	color: '#fff',
+  	width: 400,
+  }
+}
+
 
 
 export default class StudentInfo extends React.Component {
@@ -22,17 +44,43 @@ export default class StudentInfo extends React.Component {
 
 	}
 
-	nextPage() {
-
-	}
-
   render() {
 
 
     return (
 
+      <div>
+        <h1>Student Info</h1>
+			    <TextField
+			   	 	name="Student First Name"
+			   	 	floatingLabelText="First Name"
+				    underlineFocusStyle={styles.underlineStyle}
+				    floatingLabelFocusStyle={styles.floatingLabelFocusStyle} 
+				   /><br />	    
+				   <TextField
+			   	 	name="Student Last Name"
+			   	 	floatingLabelText="Last Name"
+				    underlineFocusStyle={styles.underlineStyle}
+				    floatingLabelFocusStyle={styles.floatingLabelFocusStyle}
+				   /><br />
+				   <TextField
+			   	 	name="Student E-mail"
+			   	 	floatingLabelText="Student E-mail"
+				    underlineFocusStyle={styles.underlineStyle}
+				    floatingLabelFocusStyle={styles.floatingLabelFocusStyle}
+				   /><br />
+				   	<TextField
+			   	 	name="Student Phone Number"
+			   	 	floatingLabelText="Phone Number"
+				    underlineFocusStyle={styles.underlineStyle}
+				    floatingLabelFocusStyle={styles.floatingLabelFocusStyle}
+				   /><br />
+				 <Link to='/parentinfo'>
+				  <RaisedButton label="Continue to Next Step" backgroundColor={orange500} />
+				 </Link>
+      </div>
 
-        <div style={{textAlign: 'center'}}>
+        <div>
 
           <h1>Student Info</h1>
           <form>
@@ -56,8 +104,8 @@ export default class StudentInfo extends React.Component {
 					    <input type="text" name="Student Phone Number" />
 					  </label>
 					  <br />
-					 <Link to = '/Demographic'>
-					  <input type="submit" value="Submit" onClick = {this.nextPage.bind(this)} />
+					 <Link to='/parentinfo'>
+					  <input type="submit" value="Submit" />
 					 </Link>
 					</form>
 
@@ -67,6 +115,4 @@ export default class StudentInfo extends React.Component {
   }
 
 }
-
-// <Route path = '/demographic' component = {DemographicVolunteer} />
-// 					<Route path = '/health' component = {HealthTransportation} />
+				<Route path = '/health' component = {HealthTransportation} />
