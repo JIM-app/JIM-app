@@ -62,10 +62,6 @@ export default class StudentInfo extends React.Component {
 					</form>
 
         </div>
-
-
-
-
       );
 
   }

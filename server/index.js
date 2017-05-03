@@ -8,8 +8,6 @@ var path = require('path');
 //   res.sendFile(path.join(__dirname, '/../client/index.html'));
 // })
 
-console.log(path.join(__dirname, '/../client'));
-
 app.use(express.static(path.join(__dirname, '/../dist')));
 
 
