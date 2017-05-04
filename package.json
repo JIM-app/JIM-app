@@ -21,7 +21,7 @@
     "webpack-dev-server": "^2.4.5"
   },
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "s"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
