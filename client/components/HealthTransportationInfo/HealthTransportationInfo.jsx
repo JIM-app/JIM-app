@@ -49,7 +49,7 @@ export default class HealthTransportationInfo extends React.Component {
 					  </label>
 					  <br />
 					  <label>
-					    Emergency contact phone number: 
+					    Emergency contact phone number:
 					    <input type="text" name="EmergencyPhoneNumber" />
 					  </label>
 					  <br />
