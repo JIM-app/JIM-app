@@ -7,6 +7,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 import {orange500} from 'material-ui/styles/colors';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
+import HealthTransportation from '../HealthTransportationInfo/HealthTransportationInfo.jsx';
 
 const styles = {
 	errorStyle: {

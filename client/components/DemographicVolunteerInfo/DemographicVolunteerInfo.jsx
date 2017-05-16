@@ -62,7 +62,7 @@ export default class DemographicVolunteerInfo extends React.Component {
   render() {
     return (
       <div>
-        <form>
+
           Which best describes your child or ward? (Please select all that apply)
           <Checkbox
             label="African American"
@@ -96,7 +96,7 @@ export default class DemographicVolunteerInfo extends React.Component {
             label="AmericanIndian"
             style={styles.checkbox}
             />
-        </form>
+
         <form>
           Please choose any terms that apply to your family:
           <Checkbox
